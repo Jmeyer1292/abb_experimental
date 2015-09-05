@@ -1,31 +1,39 @@
 <package format="2">
-
   <name>abb_irb2600_12_165_moveit_config</name>
-  <version>0.2.0</version>
+  <version>0.1.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the abb_irb2600_12_165 with the MoveIt Motion Planning Framework
+    <p>
+      MoveIt package for the ABB IRB 2600-12/1.65.
+    </p>
+    <p>
+      An automatically generated package with all the configuration and launch
+      files for using the ABB IRB 2600-12/1.65 with the MoveIt Motion Planning
+      Framework.
+    </p>
   </description>
   <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
-  <maintainer email="assistant@moveit.ros.org">MoveIt Setup Assistant</maintainer>
+  <maintainer email="jonathan.meyer@swri.org">Jonathan Meyer (SwRI)</maintainer>
 
   <license>BSD</license>
 
-  <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit_setup_assistant</url>
-
-  <exec_depend>moveit_ros_move_group</exec_depend>
-  <exec_depend>moveit_planners_ompl</exec_depend>
-  <exec_depend>moveit_ros_visualization</exec_depend>
-  <exec_depend>joint_state_publisher</exec_depend>
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>xacro</exec_depend>
-  <depend>abb_irb2600_support</depend>
+  <url type="website">http://wiki.ros.org/abb_irb2600_12_165_moveit_config</url>
+  <url type="bugtracker">https://github.com/ros-industrial/abb_experimental/issues</url>
+  <url type="repository">https://github.com/ros-industrial/abb_experimental</url>
 
   <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>abb_irb2600_support</exec_depend>
+  <exec_depend>industrial_robot_simulator</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
 
   <export>
     <architecture_independent />
   </export>
-  
 </package>
