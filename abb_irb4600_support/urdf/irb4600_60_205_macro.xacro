@@ -118,7 +118,8 @@
       <axis xyz="0 1 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
-      <limit effort="0" lower="-3.141" upper="1.308" velocity="3.054"/>
+      <!-- Nominally negative pi for lower limit -->
+      <limit effort="0" lower="-2.5" upper="1.2" velocity="3.054"/>
     </joint>
     <joint type="revolute" name="${prefix}joint_4">
       <origin xyz="0 0 0.175" rpy="0 0 0"/>
